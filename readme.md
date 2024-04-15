@@ -1,5 +1,5 @@
-<h3 align="center"><u><em style="font-size: 20px;">Arquitectura Sistemas Operativos</em></u></h3>
-<h2 align="center"><em style="font-size: 24px;">Paco Fontana</em></h3>
+<h3 align="center" style="font-size: 20px;"><em>Arquitectura Sistemas Operativos</em></h3>
+<h3 align="center" style="font-size: 24px;"><em>Paco Fontana</em></h3>
 
 
 ### 📑 Indice
