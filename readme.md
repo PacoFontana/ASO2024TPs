@@ -1,6 +1,9 @@
 <h3 align="center""><em>Arquitectura Sistemas Operativos</em></h3>
 <h2 align="center"><em>Paco Fontana</em></h2>
 
+<img src="caratula_arqsisop.png">
+
+#
 
 ### 📑 Indice
 - <a href="#tp1">Trabajo Practico N°1</a>
@@ -68,8 +71,4 @@ return 0;
 </p>
 <p align="center">
 <small>Paco Fontana</small>
-</p>
-
-<p align="center">
-<img src="caratula_arqsisop.png">
 </p>
