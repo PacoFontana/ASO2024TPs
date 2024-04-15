@@ -1,5 +1,6 @@
-# **_Arquitectura Sistemas Operativos_**
-## _Paco Fontana_
+<h3 align="center"><u><em style="font-size: 20px;">Arquitectura Sistemas Operativos</em></u></h3>
+<h3 align="center"><em style="font-size: 24px;">Paco Fontana</em></h3>
+
 
 ### 📑 Indice
 - <a href="#tp1">Trabajo Practico N°1</a>
