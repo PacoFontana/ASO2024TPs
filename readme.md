@@ -69,3 +69,7 @@ return 0;
 <p align="center">
 <small>Paco Fontana</small>
 </p>
+
+<p align="center">
+<img src="caratula_arqsisop.png">
+</p>
