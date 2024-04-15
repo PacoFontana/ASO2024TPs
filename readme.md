@@ -2,7 +2,7 @@
 <h2 align="center"><em>Paco Fontana</em></h2>
 
 <h6 align="center">
-<img src="caratula_arqsisop.png"></h6>
+<img src="caratula_arqsisop.png" title="Caratula Arq. Sistemas Operativos" alt="Caratula Arq. Sistemas Operativos"></h6>
 
 #
 
