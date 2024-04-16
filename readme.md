@@ -24,7 +24,7 @@
 Print("Hola Mundo!")
 ```
 
-<a name="tp2"></a>
+<a id="tp2"></a>
 # 
 ### 📚 Trabajo Practico N°2
 #### 📖 `Uso de "GCC" y "GitHub"`
