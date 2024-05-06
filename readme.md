@@ -9,6 +9,7 @@
 ### 📑 Indice
 - <a href="#tp1">![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&center=true&vCenter=true&repeat=false&random=false&width=180&height=15&lines=Trabajo+Practico+N%C2%B01)</a>
 - <a href="#tp2">![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&center=true&vCenter=true&repeat=false&random=false&width=180&height=15&lines=Trabajo+Practico+N%C2%B02)</a>
+- <a href="#tp3">![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&center=true&vCenter=true&repeat=false&random=false&width=180&height=15&lines=Trabajo+Practico+N%C2%B03)</a>
 
 #
 <a name="tp1"></a>
@@ -24,7 +25,7 @@
 Print("Hola Mundo!")
 ```
 
-<a id="tp2"></a>
+<a name="tp2"></a>
 # 
 ### 📚 Trabajo Practico N°2
 #### 📖 `Uso de "GCC" y "GitHub"`
@@ -64,6 +65,23 @@ sleep(10);
 
 return 0;
 }
+```
+
+<a name="tp3"></a>
+# 
+### 📚 Trabajo Practico N°3
+#### 📖 `Tiempo de ejecucion de los programas`
+##### 📃 En este trabajo probamos el tiempo de ejecucion entre programas con hilos y sin hilos, tambien resolvemos un problema que provoca repartir hamburgesas de manera no equitativa. 
+
+#### 1-A: En mi caso, el archivo <a href="">"sinhilos.py"</a> se ejecuta en un tiempo aproximado de 5,22.. segundos, mientras que el archivo <a href="">"conhilos.py"</a> dura aproximadamente 4,027.. segundos en ejecutarse por completo. Ejecutando ambos archivos (por separado) en diferentes ocasiones, cambia el tiempo el tiempo que tarda en ejecutarse por completo. <div> Por lo que podria decirse que "No son predecibles" los tiempos de ejecucion.
+
+#### 1-B: Los tiempos de ejecucion comparados con mi compañero son similares, pero no iguales.
+
+#### 1-C: En la primer situacion, siempre devuelve un valor final "0" porque el programa usa una misma  para acumular el valor de la suma (+5) y el valor de la resta (-5) haciendo que el valor final quede en "0", en cambio en la segunda situacion (aplicando las funciones que estaban desactivadas con las notas) al programa le toma mas  tiempo ejecutarse y devuelve un valor aleatorio cada vez que se ejecuta.
+
+#### Codigo usado:
+```
+Codigo*
 ```
 
 #
