@@ -73,16 +73,83 @@ return 0;
 #### 📖 `Tiempo de ejecucion de los programas`
 ##### 📃 En este trabajo probamos el tiempo de ejecucion entre programas con hilos y sin hilos, tambien resolvemos un problema que provoca repartir hamburgesas de manera no equitativa. 
 
-#### 1-A: En mi caso, el archivo <a href="">"sinhilos.py"</a> se ejecuta en un tiempo aproximado de 5,22.. segundos, mientras que el archivo <a href="">"conhilos.py"</a> dura aproximadamente 4,027.. segundos en ejecutarse por completo. Ejecutando ambos archivos (por separado) en diferentes ocasiones, cambia el tiempo el tiempo que tarda en ejecutarse por completo. <div> Por lo que podria decirse que "No son predecibles" los tiempos de ejecucion.
+#### 1-A: En mi caso, el archivo <a href="TP3/tareas/sinhilos.py">"sinhilos.py"</a> se ejecuta en un tiempo aproximado de 5,22.. segundos, mientras que el archivo <a href="TP3/tareas/conhilos.py">"conhilos.py"</a> dura aproximadamente 4,027.. segundos en ejecutarse por completo. Ejecutando ambos archivos (por separado) en diferentes ocasiones, cambia el tiempo el tiempo que tarda en ejecutarse por completo. <div> Por lo que podria decirse que "No son predecibles" los tiempos de ejecucion.
 
 #### 1-B: Los tiempos de ejecucion comparados con mi compañero son similares, pero no iguales.
 
 #### 1-C: En la primer situacion, siempre devuelve un valor final "0" porque el programa usa una misma  para acumular el valor de la suma (+5) y el valor de la resta (-5) haciendo que el valor final quede en "0", en cambio en la segunda situacion (aplicando las funciones que estaban desactivadas con las notas) al programa le toma mas  tiempo ejecutarse y devuelve un valor aleatorio cada vez que se ejecuta.
 
+#### 2-A: Resolviendo el puzzle podemos hacer que dos comensales se turnen para comer las hamburgesas
+
+<img src="TP3/race_condition/imagen_consola.png" alt="Muestra de la terminal a la hora de ejecutar el codigo resuelto" title="Muestra de la terminal a la hora de ejecutar el codigo resuelto">
+
 #### Codigo usado:
 ```
-Codigo*
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+#define NUMBER_OF_THREADS 2
+#define CANTIDAD_INICIAL_HAMBURGUESAS 20
+int cantidad_restante_hamburguesas = CANTIDAD_INICIAL_HAMBURGUESAS;
+
+int turno = 0;
+
+
+void *comer_hamburguesa(void *tid)
+{
+	while (1 == 1)
+	{ 
+		
+    // INICIO DE LA ZONA CRÍTICA
+	while(turno!=(int)tid);
+
+		if (cantidad_restante_hamburguesas > 0)
+		{
+			printf("Hola! soy el hilo(comensal) %d , me voy a comer una hamburguesa ! ya que todavia queda/n %d \n", (int) tid, cantidad_restante_hamburguesas);
+			cantidad_restante_hamburguesas--; // me como una hamburguesa
+		}
+		else
+		{
+			printf("SE TERMINARON LAS HAMBURGUESAS :( \n");
+				turno = (turno + 1)% NUMBER_OF_THREADS;
+			pthread_exit(NULL); // forzar terminacion del hilo
+		}
+
+		turno = (turno + 1)% NUMBER_OF_THREADS;
+    // SALIDA DE LA ZONA CRÍTICA   
+
+	}
+}
+
+int main(int argc, char *argv[])
+{
+	pthread_t threads[NUMBER_OF_THREADS];
+	int status, i, ret;
+	for (int i = 0; i < NUMBER_OF_THREADS; i++)
+	{
+		printf("Hola!, soy el hilo principal. Estoy creando el hilo %d \n", i);
+		status = pthread_create(&threads[i], NULL, comer_hamburguesa, (void *)i);
+		if (status != 0)
+		{
+			printf("Algo salio mal, al crear el hilo recibi el codigo de error %d \n", status);
+			exit(-1);
+		}
+	}
+
+	for (i = 0; i < NUMBER_OF_THREADS; i++)
+	{
+		void *retval;
+		ret = pthread_join(threads[i], &retval); // espero por la terminacion de los hilos que cree
+	}
+	pthread_exit(NULL); // como los hilos que cree ya terminaron de ejecutarse, termino yo tambien.
+}
 ```
+
+#### 2-B: <img src="TP3/comensales.png" alt="Diagrama de comensales" title="Diagrama de comensales">
+
+<a href="https://whimsical.com/FADmh2Z9PN4nWnA62wYKwa">*Hacer clic aca para ir al diagrama original en el sitio web donde lo hice..*</a>
+
+<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/FADmh2Z9PN4nWnA62wYKwa"></iframe>
 
 #
 
