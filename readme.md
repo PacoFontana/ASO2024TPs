@@ -10,6 +10,7 @@
 - <a href="#tp1">![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&center=true&vCenter=true&repeat=false&random=false&width=180&height=15&lines=Trabajo+Practico+N%C2%B01)</a>
 - <a href="#tp2">![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&center=true&vCenter=true&repeat=false&random=false&width=180&height=15&lines=Trabajo+Practico+N%C2%B02)</a>
 - <a href="#tp3">![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&center=true&vCenter=true&repeat=false&random=false&width=180&height=15&lines=Trabajo+Practico+N%C2%B03)</a>
+- <a href="#tp3">![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&pause=1000&center=true&vCenter=true&repeat=false&random=false&width=180&height=15&lines=Trabajo+Practico+N%C2%B04)</a>
 
 #
 <a name="tp1"></a>
@@ -149,7 +150,15 @@ int main(int argc, char *argv[])
 
 <a href="https://whimsical.com/FADmh2Z9PN4nWnA62wYKwa">*Hacer clic aca para ir al diagrama original en el sitio web donde lo hice..*</a>
 
-<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/FADmh2Z9PN4nWnA62wYKwa"></iframe>
+#
+
+<a name="tp4"></a>
+### 📚 Trabajo Practico N°4
+#### 📖 `Clonar sitio web de UTN en un host local`
+
+<img src="TP4/html.png" alt="Imagen del LOCALHOST previo al clonado" title="Imagen del LOCALHOST previo al clonado">
+<img src="TP4/php.png" alt="Web de PHP" title="Web de PHP">
+<img src="TP4/utnweb.png" alt="sitio web de utn clonado" title="sitio web de utn clonado">
 
 #
 
