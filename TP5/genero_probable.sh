@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pregunto al usuario que nombre quiere investigar
-echo -e "Ingresa un nombre para determinar a qué género pertenece"
+echo -e "Ingresa un nombre para determinar a qué genero pertenece"
 read -p "[>]: " nombre
 
 # Obtengo la respuesta de la API
@@ -21,7 +21,7 @@ fi
 
 # Verifico que "nombre" sea lógico, la API devuelve "null" cuando el nombre no es válido
 if [ "$genero" != "null" ]; then
-    echo "El nombre '$nombre' probablemente corresponde al género: $traducido."
+    echo "El nombre '$nombre' probablemente corresponde al genero: $traducido."
 else
-    echo "No se pudo determinar el género para el nombre '$nombre'."
+    echo "No se pudo determinar el genero para el nombre '$nombre'."
 fi
